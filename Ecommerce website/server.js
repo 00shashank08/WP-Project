@@ -57,8 +57,6 @@ let { name, email, password, number, tac, notification } = req.body;
 if(name.length < 3){
     return res.json({'alert': 'name must be 3 letters long'});
 }
-//idhar else if.... kuch tha
-
 const processData = (data) => {
     loader.style.display = null;
     if(data.alert){
